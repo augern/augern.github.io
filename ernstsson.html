@@ -1,0 +1,106 @@
+<!doctype HTML>
+<html>
+<head>
+<title>August Ernstsson</title>
+<style type="text/css">
+
+	body {
+		background-image: url(back.jpg);
+		background-size: cover;
+		background-attachment: fixed;
+		background-repeat:no-repeat;
+		background-position: center center;
+
+		padding: 0;
+		margin: 0;
+		
+		color: rgba(255,255,255,0.8);
+		font-family: "Helvetica Neue Light", sans-serif;
+		font-weight: lighter;
+		text-align: center;
+	}
+
+	img#headshot {
+		border-radius: 100%;
+		box-shadow: 0px 3px 20px rgba(0,0,0, 0.3);
+		display: block;
+		height: 15em;
+	/*	border: 5px solid rgba(255,255,255,0.7);*/
+		margin: 5em auto 2em auto;
+		opacity: 0.9;
+	}
+	
+	h1 {
+		margin-top: 0;
+		font-size: 4em;
+		font-weight: lighter;
+		text-shadow: 0 1px 10px rgba(0,0,0,0.8);
+	}
+	
+	div#cover {
+		width: 100%; height: 100%;
+		background-color: rgba(255, 255, 255, 0.8);
+		padding: 1em;
+		box-sizing: border-box;
+		color: rgba(0, 0, 0, 0.6);
+	}
+	
+	hr {
+		border: none;
+		border-top: 1px solid rgba(0,0,0,0.1);
+		width: 10em;
+	}
+	
+	a {
+		text-decoration: none;
+		color: rgba(135, 5, 3, 0.7);
+	}
+	
+	a:hover {
+		text-shadow: 0 0 5px rgba(135, 5, 3, 0.3);
+	}
+	
+	h1.dark {
+		color: rgba(0, 0, 0, 0.5);
+	}
+	
+	div#cover.dark {
+		
+		background-color: rgba(0, 0, 0, 0.8);
+		color: rgba(255,255,255,0.8);
+	}
+	
+	div#cover.dark a {
+		color: rgba(208, 176, 4, 0.84);
+	}
+	
+	div#cover.dark a:hover {
+		text-shadow: 0 0 5px rgba(208, 176, 4, 1);
+	}
+	
+	div#cover.dark hr {
+		border: none;
+		border-top: 1px solid rgba(255,255,255,0.3);
+		width: 10em;
+	}
+	
+	@media screen and (max-width: 500pt)
+	{
+		img#headshot { height: 10em; }
+		h1 { font-size: 2.5em; }
+	}
+	
+</style>
+</head>
+	<body>
+		<img id="headshot" src="me.jpg" alt="August Ernstsson"/>
+		<h1>August Ernstsson</h1>
+		<div id="cover"  class="dark">
+			<p>Computer science and engineering student</p>
+			<p>➤ Linköping, Sweden</p>
+			<hr/>
+			<p><a href="https://github.com/augern/">Open source projects</a></p>
+			<p>Contact me at <a href="mailto:contact@august.ernstsson.se">august@ernstsson.se</a></p>
+		</div>
+	</body>
+</html>
