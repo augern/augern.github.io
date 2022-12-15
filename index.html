@@ -2,140 +2,32 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-<title>August Ernstsson</title>
-<style type="text/css">
-
-	@font-face {
-		font-family: "Oxanium";
-		src: url("fonts/Oxanium-Regular.ttf");
-	}
-	@font-face {
-		font-family: "Oxanium";
-		src: url("fonts/Oxanium-ExtraLight.ttf");
-		font-weight: lighter;
-	}
-	@font-face {
-		font-family: "Oxanium";
-		src: url("fonts/Oxanium-Bold.ttf");
-		font-weight: bold;
-	}
-	
-	body {
-		background-color: rgb(60,60,60);
-		padding: 1em;
-		padding-bottom: 6em;
-		margin: 0;
-		color: rgba(255,255,255,0.8);
-		font-family: "Oxanium", sans-serif;
-		font-weight: lighter;
-		text-align: center;
-		text-transform: lowercase;
-	}
-
-	img#headshot {
-		border-radius: 100%;
-		height: 1.5em;
-		vertical-align: middle;
-		border: 3px solid yellow;
-		margin-right: 0.3em;
-		filter: brightness(1.3);
-	}
-	
-	
-	h1 {
-		margin: 0em auto;
-		font-size: 3.5em;
-		font-weight: bold;
-		background: linear-gradient(to bottom, rgba(60,60,60, 1) 0%, rgba(60,60,60, 1) 80%, rgba(60,60,60, 0) 100%);
-		position: sticky;
-	  top: 0;
-	}
-	
-	h2 {
-		margin: 2em 0 0 0;
-	}
-	
-	div#cover {
-		box-sizing: border-box;
-		max-width: 600px;
-		margin: 0 auto;
-	}
-	
-	hr {
-		border: none;
-		margin: 0em 0 1em 0;
-		height: 1px;
-		background-image: linear-gradient(90deg, transparent, rgba(255,255,255,0.3) 25%, rgba(255,255,255,1) 50%, rgba(255,255,255,0.3) 75%, transparent);
-	}
-	
-	a {
-		color: yellow;
-	}
-	
-	.highlight {
-		color: yellow;
-	}
-	
-	.shade {
-		opacity: 0.2;
-	}
-	
-	ul {
-		margin: 0;
-	}
-	
-	li {
-		list-style-type: none;
-		text-align: left;
-		margin-bottom: 0.3em;
-		font-size: 0.9em;
-	}
-	
-	li:after {
-		content: ".";
-		color: yellow;
-	}
-	
-	ul li::before {
-		content: ">>";
-		color: yellow;
-		display: inline-block;
-		width: 1.5em;
-		margin-left: -1.5em;
-	}
-	
-	@media screen and (max-width: 500pt)
-	{
-		h1 { font-size: 1.8em; }
-	}
-	
-	.comment {
-		display: none;
-	}
-	
-	em {
-		font-style: italic;
-		color: #aaa;
-	}
-	
-/*	section {
-		background: radial-gradient(ellipse 50% 2em at top, rgba(0, 0, 0, 0.12), transparent);
-		padding-top: 1em;
-		padding-bottom: 2em;
-	}*/
-	
-	
-</style>
+	<title>August Ernstsson</title>
+	<link rel="stylesheet" href="style.css"/>
 </head>
 	<body>
 		
 		<h1><img id="headshot" src="me.jpg" alt="August Ernstsson"/> august<span class="highlight">.</span>ernstsson<span class="highlight">.</span><span class="shade">se</span></h1>
 		<div id="cover">
-			<p>PhD student in computer science. M.Sc., Tekn. Lic.<br/>
-			 <span class="comment">// Forskarstuderande i datalogi</span></p>
+			<p>Postdoc in computer science. PhD, MSc.<br/>
+			 <span class="comment">// Postdok i datalogi</span></p>
 			<p>Linköping, Sweden <span class="comment">// Linköping, Sverige</span></p>
 	<!--		<p><a href="https://github.com/augern/">Open source projects</a></p>-->
 			<p><a href="mailto:contact@august.ernstsson.se">august@ernstsson.se</a></p>
+			<p>
+				<a href="https://www.researchgate.net/profile/August-Ernstsson">
+					<img src="resources/researchgate_icon.svg" class="link_decorator" alt="ResearchGate icon"/>
+					ResearchGate</a>
+				&middot;
+				<a href="https://www.linkedin.com/in/aernstsson/">
+					<img src="resources/linkedin_icon.svg" class="link_decorator" alt="LinkedIn icon"/>
+					LinkedIn</a>
+				&middot;
+				<a id="cy-effective-orcid-url" class="underline" href="https://orcid.org/0000-0001-6514-4601" target="orcid.widget" rel="me noopener noreferrer">
+	     		<img src="resources/orcid_icon.svg" class="link_decorator" alt="ORCID iD icon"/>
+		      0000-0001-6514-4601
+		    </a>
+			</p>
 			
 			<h2>Interests<span class="highlight">.</span> <span class="comment">// Intressen</span></h2>
 			<hr/>
@@ -152,7 +44,7 @@
 			<hr/>
 			<section>
 			
-			I am a graduate student at the <em>Programming Environments Laboratory</em> (<a href="https://www.ida.liu.se/labs/pelab/pelab.shtml">PELAB</a>) at the <em>Department of Computer and Information Science</em> (<a href="https://www.ida.liu.se">IDA</a>), Linköping University.
+			I am a postdoc at the <em>Programming Environments Laboratory</em> (<a href="https://www.ida.liu.se/labs/pelab/pelab.shtml">PELAB</a>) at the <em>Department of Computer and Information Science</em> (<a href="https://www.ida.liu.se">IDA</a>), Linköping University.
 			
 			</section>
 			<h2>Publications<span class="highlight">.</span> <span class="comment">// publikationer</span></h2>
@@ -200,25 +92,38 @@
 						<em>SCOPES '20: Proceedings of the 23th International Workshop on Software and Compilers for Embedded Systems</em>, New York, NY, USA. ACM, May 2020, pages 74-77. <a href="https://doi.org/10.1145/3378678.3391889">DOI: 10.1145/3378678.3391889</a></li>
 						
 						<li><b>August Ernstsson</b>.
-						<em>Designing a Modern Skeleton Programming Framework for Parallel and Heterogeneous Systems</em>. Link&ouml;ping Studies in Science and Technology, Licentiate Thesis No. 1886, Link&ouml;ping University, October 2020. (<a href="http://urn.kb.se/resolve?urn=urn:nbn:se:liu:diva-170194">LiU-EP</a>)</li>
+						<em>Designing a Modern Skeleton Programming Framework for Parallel and Heterogeneous Systems</em>. Link&ouml;ping Studies in Science and Technology, Licentiate Thesis No. 1886, Link&ouml;ping University, October 2020. <a href="https://doi.org/10.3384/lic.diva-170194">DOI: 10.3384/lic.diva-170194</a></li>
 					</ul>
 					
 			<!--		<h3 id="p2021">2021</h3>-->
 					<ul>
 						<li><b>August Ernstsson, Johan Ahlqvist, Stavroula Zouzoula, Christoph Kessler</b>.
 							SkePU 3: Portable High-Level Programming of Heterogeneous Systems and HPC Clusters.
-							<em>Int. Journal of Parallel Programming (2021)</em>.
+							<em>Int J Parallel Prog</em> <b>49</b>, 846–866 (2021).
 							<a href="https://doi.org/10.1007/s10766-021-00704-3">DOI: 10.1007/s10766-021-00704-3</a></li>
+					</ul>
+          
+      <!--		<h3 id="p2022">2022</h3>-->
+					<ul>
+            <li><b>August Ernstsson</b>.
+						<em>Pattern-based Programming Abstractions for Heterogeneous Parallel Computing</em>. Link&ouml;ping Studies in Science and Technology, Dissertation No. 2205, Link&ouml;ping University, March 2022. <a href="https://doi.org/10.3384/9789179291969">DOI: 10.3384/9789179291969</a></li>
 						
 						<li><b>Lazaros Papadopoulos, Dimitrios Soudris, Christoph Kessler, August Ernstsson, Johan Ahlqvist, Nikos Vasilas, Athanasios I. Papadopoulos, Panos Seferlis, Charles Prouveur, Matthieu Haefele, Samuel Thibault, Athanasios Salamanis, Theodoros Ioakimidis, Dionysios Kehagias</b>.
-						EXA2PRO: A Framework for High Development Productivity on Heterogeneous Computing Systems.
-						<em>IEEE Transactions on Parallel and Distributed Systems</em>, 2021.
-						<a href="https://doi.org/10.1109/TPDS.2021.3104257">DOI: 10.1109/TPDS.2021.3104257</a></li>
+							EXA2PRO: A Framework for High Development Productivity on Heterogeneous Computing Systems.
+							<em>IEEE Transactions on Parallel and Distributed Systems</em> vol. 33, no. 4, pp. 792-804, 1 April 2022.
+							<a href="https://doi.org/10.1109/TPDS.2021.3104257">DOI: 10.1109/TPDS.2021.3104257</a></li>
 						
 						<li><b>August Ernstsson, Nicolas Vandenbergen, Jörg Keller, Christoph Kessler</b>.
 							A Deterministic Portable Parallel Pseudo-Random Number Generator for Pattern-Based Programming of Heterogeneous Parallel Systems.
-							<em>To appear</em></li>
-							<!--<a href="https://doi.org/10.1007/s10766-021-00704-3">DOI: 10.1007/s10766-021-00704-3</a>-->
+							<em>Int J Parallel Prog</em> <b>50</b>, 319–340 (2022).
+							<a href="https://doi.org/10.1007/s10766-022-00726-5">DOI: 10.1007/s10766-022-00726-5</a></li>
+						
+						<li><b>Gabriella Andrade, Dalvan Griebler, Rodrigo Santos, Christoph Kessler, August Ernstsson, Luis G. Fernandes</b> Analyzing programming effort model accuracy of high-level parallel programs for stream processing. <em>2022 48th Euromicro Conference on Software Engineering and Advanced Applications (SEAA)</em>, pp. 1–4, 2022.</li>
+						
+						<li><b>August Ernstsson, Dalvan Griebler, Christoph Kessler</b>.
+							Assessing Application Efficiency and Performance Portability in Single‐Source Programming for Heterogeneous Parallel Systems.
+							<em>Int. Journal of Parallel Programming (2022)</em>.
+							<a href="https://doi.org/10.1007/s10766-022-00746-1">DOI: 10.1007/s10766-022-00746-1</a></li>
 					</ul>
 			
 			</section>
@@ -241,7 +146,13 @@
 			
 			<li><b>HLPP 2020</b>, <em>distance mode</em>. SkePU 3: Portable High-Level Programming of Heterogeneous Systems and HPC Clusters</li>
 			
+			<li><b>Licentiate seminar</b>, <em>distance mode</em>. Designing a Modern Skeleton Programming Framework for Parallel and Heterogeneous Systems</li>
+			
 			<li><b>HLPP 2021</b>, <em>distance mode</em>. A Deterministic Portable Parallel Pseudo-Random Number Generator for Pattern-Based Programming of Heterogeneous Parallel Systems</li>
+			
+			<li><b>Doctoral defense</b>, <em>Linköping, Sweden</em>. Pattern-based Programming Abstractions for Heterogeneous Parallel Computing</li>
+			
+			<li><b>HLPP 2022</b>, <em>Porto, Portugal</em>. Assessing Application Efficiency and Performance Portability in Single‐Source Programming for Heterogeneous Parallel Systems</li>
 			
 			</ul>
 			
@@ -265,10 +176,11 @@
 			<section>
 			
 			<ul>
-				<li><b>TDDC78 Programming of Parallel Computers: Methods and Tools</b><br/> Lab/course assistant 2016– (master's level)</li>
-				<li><b>TDDD56 Multicore and GPU Programming</b><br/> Lab/course assistant 2016– (master's level)</li>
+				<li><b>TDDC78 Programming of Parallel Computers: Methods and Tools</b><br/> Lab/course assistant 2016,2017,2018,2019,2020,2021,2022 (master's level)</li>
+				<li><b>TDDD56 Multicore and GPU Programming</b><br/> Lab/course assistant 2016,2017,2018,2019,2020,2021,2022 (master's level)</li>
 				<li><b>DF00100 Advanced Compiler Construction</b><br/> Lab assistant 2021 (PhD level)</li>
-				<li><b>TDDD89 Scientific Method</b><br/> Teaching assistant 2021– (master's level)</li>
+				<li><b>TDDD89 Scientific Method</b><br/> Teaching assistant 2021,2022 (master's level)</li>
+				<li><b>TDDC88/TDDC93/725G64 Software Engineering</b><br/> Exam construction/correction assistant 2022 (undergraduate)</li>
 				<li><b>Master's thesis project (co)supervision</li>
 			</ul>
 			
