@@ -134,6 +134,5 @@ b {
 section {
     text-align: left;
 	background: radial-gradient(ellipse 50% 2em at top, rgba(0, 0, 0, 0.15), transparent);
-	padding-top: 1em;
-	padding-bottom: 2em;
+	padding-top: 1.2em;
 }
